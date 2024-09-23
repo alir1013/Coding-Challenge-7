@@ -54,3 +54,5 @@ const company= {
        
     ]
 };
+
+console.log("Department Details:",company); //Logging the department for better console readibility

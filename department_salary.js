@@ -78,3 +78,16 @@ const businessDepartment = company.departments[0];
 const totalSalary = calculateDepartmentSalary(businessDepartment);
 console.log("Total Salary for the Business Department:",totalSalary); //Testing the function 
 
+//Task 3: Creating a Function to Calculate the Total Salary for All Departments
+
+//Creating a function that accepts the company object and iterates over each department to calculate the total salary of the company
+
+function calculateCompanySalary(company){
+    let totalSalary=0;
+    
+    for(let department of company.departments){
+        totalSalary += calculateDepartmentSalary (department); //iterates over each department to calculate total
+    }
+    return totalSalary;
+}
+console.log("Salary of the Whole Company:",calculateCompanySalary(company)); //Testing the function
